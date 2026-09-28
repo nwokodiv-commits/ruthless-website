@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruthless</title>
+<style>
+        body {
+            margin: 0;
+            background: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        svg {
+    width: 80px;
+    height: auto;
+    max-width: 20vw;
+}
+
+        .r {
+            fill: none;
+            stroke: url(#rGradient);
+            stroke-width: 12;
+            stroke-linecap: round;
+            stroke-linejoin: miter;
+
+            stroke-dasharray: 300;
+            stroke-dashoffset: 600;
+
+            animation: drawR 3s linear infinite;
+        }
+
+        @keyframes drawR {
+            0% {
+                stroke-dashoffset: 600;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <svg viewBox="0 0 200 200">
+
+        <defs>
+            <linearGradient
+                id="rGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+            >
+                <stop offset="0%" stop-color="black" />
+                <stop offset="50%" stop-color="#b000ff" />
+                <stop offset="100%" stop-color="blue" />
+            </linearGradient>
+        </defs>
+
+        <path
+            class="r"
+            d="
+                M55 170
+                V30
+                H105
+                C145 30 150 90 105 90
+                H55
+                L155 170
+            "
+        />
+
+    </svg>
+    <script>
+        setTimeout(function() {
+    window.location.href = "ruthlessweb2.html";
+}, 5000);
+    </script>
+
+</body>
+
+</html>
+    
