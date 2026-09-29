@@ -9,6 +9,28 @@
 
 
     <style>
+         body {
+    margin: 0;
+    background-color: white;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/html/ruthless-website/a8605d67773e3e3c26916114d8a68549.png");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    opacity: 0.6;
+    z-index: -1;
+}
         .gradient {
             background: linear-gradient(to right, black, #b000ff, blue);
             -webkit-background-clip: text;
