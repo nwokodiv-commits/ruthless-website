@@ -1,553 +1,123 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<title>Ruthless Guild</title>
-
-<style>
-
-    * {
-        box-sizing: border-box;
-    }
-
-
-    body {
-        margin: 0;
-              background: linear-gradient(-45deg, #050510, #19052F, #071B36, #10051E);
-    min-height: 100vh;
-        overflow-x: hidden;
-        
-    }
-
-
-    
-
-    .main-page {
-        position: relative;
-        overflow: hidden;
-    }
-
-
-   
-
-    .background-images {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-
-        opacity: 0.5;
-
-        z-index: 0;
-    }
-
-
-    .background-png {
-        display: block;
-
-        width: 600px;
-        max-width: 100%;
-
-        height: auto;
-
-        margin: 0 auto;
-    }
-
-
-
-    .content {
-        position: relative;
-        z-index: 1;
-
-        width: 100%;
-        max-width: 900px;
-
-        margin: 0 auto;
-
-        padding: 0 20px;
-    }
-        .col{
-          color: white;
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 20px;
-        text-shadow: 0 0 15px #8B5CF6,
-                 0 0 15px #8B5CF6,
-                 0 0 40px #8B5CF6;
-    }
-
-
-
-  
-
-    .gradient {
-        background: linear-gradient(
-            to right,
-            purple,
-            #b000ff,
-            blue
-        );
-
-        -webkit-background-clip: text;
-        background-clip: text;
-
-        -webkit-text-fill-color: transparent;
-
-        color: transparent;
-    }
-
-
-   
-
-    h1 {
-        text-align: center;
-
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-
-   
-
-
-    p {
-        text-align: center;
-
-        line-height: 1.6;
-    }
-
-
-  
-
-    ul {
-        max-width: 800px;
-
-        margin: 0 auto;
-
-        line-height: 1.8;
-    }
-
-
-   
-
-    .button {
-        display: inline-block;
-
-        padding: 10px 18px;
-        margin-top: 20px;
-
-        border-radius: 25px;
-
-        background-color: #8B5CF6;
-          transition: transform 0.3s ease,
-                box-shadow 0.3s ease,
-                background-color 3s ease;
-
-        color: white;
-
-        margin-left: 20px;
-
-        text-decoration: none;
-    }
-
-
-    .button:hover {
-        background-color: grey;
-           cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px #8B5CF6;
-    }
-
-
-
-    .footer {
-        width: 100%;
-
-        background-color: black;
-
-        color: white;
-
-        text-align: center;
-
-        padding: 40px 20px;
-
-        margin-top: 50px;
-    }
-
-
-    .footer h1 {
-        margin-top: 0;
-
-        color: white;
-    }
-
-
-    .footer p {
-        line-height: 1.8;
-    }
-
-
-
-
-    .whatsapp-button {
-        display: inline-block;
-
-        background-color: white;
-
-        color: black;
-        transition: transform 0.3s ease,
-                box-shadow 0.3s ease,
-                background-color 3s ease;
-
-        padding: 12px 25px;
-
-        border-radius: 25px;
-
-        margin-top: 10px;
-
-        text-decoration: none;
-    }
-
-
-    .whatsapp-button:hover {
-        background-color: rgb(241, 185, 111);
-         cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgb(240, 141, 13);
-    }
-
-
-  
-
-    .copyright {
-        margin-top: 35px;
-
-        font-size: 14px;
-
-        opacity: 0.7;
-    }
-.colo{
-   color: #C4B5FD;
-}
-.main-page p,li{
-    color: white;
-    text-align: center;
-}
-ul {
-    display: table;
-    margin: 0 auto;
-    list-style-position: outside;
-}
-
-li {
-    text-align: left;
-      list-style-position: inside;
-}
-
-
-
-    @media (max-width: 600px) {
-
-        h1 {
-            font-size: 28px;
-
-            margin-top: 25px;
-        }
-
-
-        p {
-            font-size: 16px;
-        }
-
-
-        .content {
-            width: 100%;
-
-            padding: 0 20px;
-        }
-
-
-        .button {
-            margin-left: 5px;
-
-            padding: 10px 16px;
-        }
-
-
-        ul {
-            padding-left: 25px;
-        }
-
-
-        .background-png {
-            width: 100%;
-
-            max-width: 100%;
-
-            height: auto;
-        }
-
-
-        .footer {
-            padding: 35px 15px;
-        }
-
-
-        .whatsapp-button {
-            padding: 12px 20px;
-
-            max-width: 100%;
-        }
-
-
-        .copyright {
-            font-size: 13px;
-        }
-
-    }
-
-</style>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080711">
+  <meta name="description" content="Meet Ruthless, a Free Fire guild from the MEA region. Built on skill, loyalty, teamwork and the hunger to improve.">
+  <title>Ruthless Guild | Stay Ruthless</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="main.js" defer></script>
 </head>
-
 <body>
-
-
-
-<div class="main-page">
-
-
- 
-
-    <div class="background-images">
-
-
- 
-
-        <img
-            src="a8605d67773e3e3c26916114d8a68549.png"
-            class="background-png"
-            alt=""
-        >
-
-
-
-        <img style="margin-top: 160px;"
-            src="secondpngbackground.png"
-            class="background-png"
-            alt=""
-        >
-
-
-    </div>
-
-
-
-
-    <div class="content">
-
-
-        <h1 class="col">
-            Welcome To
-            <span class="gradient">Ruthless</span>
-        </h1>
-
-
-        <p>
-            Our Motto:
-            <strong>(Stay Ruthless)</strong>
-        </p>
-
-
-        <p>
-            Region: MEA
-        </p>
-
-
-        <p style=" font-weight: bold;">
-            Looking for nickname generator? <br>
-
-            <a
-                href="nickname.html"
-                class="button"
-            >
-                Tap Here
-            </a>
-        </p>
-
-
-        <h1 class="colo">
-            About Ruthless
-        </h1>
-
-
-        <p>
-            Ruthless was created in 2025 but it first started as Athena
-            and retained the name for at least 2 months.
-            The leaders thought of something new.
-            The Guild leader - Ragna, as well as the former Acting guild leader - Rex, came up with the name
-            <strong>Ruthless</strong> and they all agreed to it
-            and have been pushing the guild since then.
-
-            Ruthless isn't just a guild.
-            It's a squad built around skill, loyalty,
-            teamwork and hunger to improve.
-
-            Every member represents the name.
-        </p>
-
-
-
-        <h1 class="colo">
-            Our Mission
-        </h1>
-
-
-        <ul>
-
-            <li>
-                Build a strong competitive team
-            </li>
-
-            <li>
-                Improve members' skills
-            </li>
-
-            <li>
-                Participate in tournaments
-            </li>
-
-            <li>
-                Become a loyal community
-            </li>
-
-            <li>
-                Become recognized in the Free Fire community
-            </li>
-
-        </ul>
-
-
-
-        <h1 class="colo">
-            Guild Rules
-        </h1>
-
-
-        <ul>
-
-            <li>
-                At least 2k points from each member
-            </li>
-
-            <li>
-                Respect other members
-            </li>
-
-            <li>
-                Respect the leaders
-            </li>
-
-            <li>
-                No unnecessary toxicity
-            </li>
-
-            <li>
-                Help teammates improve
-            </li>
-
-        </ul>
-
-
-       
-
-        <h1 class="colo">
-            Recruitment
-        </h1>
-
-
-        <ul>
-
-            <li>
-                Minimum level: Level 40
-            </li>
-
-            <li>
-                Required Rank: Platinum in CS or BR
-            </li>
-
-            <li>
-                No age limit
-            </li>
-
-        </ul>
-
-
-    </div>
-
-
-</div>
-
-
-
-
-<footer class="footer">
-
-
-    <h1>
-        Join Ruthless
-    </h1>
-
-
-    <p>
-
-        Contact Us for Recruitment:
-
-        <br>
-
-        +234 913 320 7076
-
-        <br>
-
-        +234 907 223 2308
-
-        <br>
-
-        +234 901 870 4936
-
-    </p>
-
-
-    <p>
-        OR
-    </p>
-
-
-    <a
-        href="https://chat.whatsapp.com/Jds4KnUkWjVIqSGYCprztE"
-        class="whatsapp-button"
-    >
-        Join WhatsApp Tryout GC
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="ruthlessweb2.html" aria-label="Ruthless home">
+      <span class="brand-symbol">R</span><span class="brand-name">RUTHLESS<small>FREE FIRE GUILD</small></span>
     </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#about">ABOUT</a><a href="#mission">OUR MISSION</a><a href="#standards">STANDARDS</a><a href="#recruitment">RECRUITMENT</a>
+      <a class="nav-cta" href="https://chat.whatsapp.com/Jds4KnUkWjVIqSGYCprztE" target="_blank" rel="noopener noreferrer">JOIN TRYOUTS <span>↗</span></a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-lines" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> FREE FIRE • MEA REGION</p>
+        <h1>BUILT TO<br><span>STAY RUTHLESS.</span></h1>
+        <p class="hero-description">More than a guild. A team built around skill, loyalty, teamwork and the hunger to improve.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#recruitment">EXPLORE RECRUITMENT <span>↗</span></a>
+          <a class="button button-ghost" href="#about">DISCOVER OUR STORY <span>↓</span></a>
+        </div>
+        <div class="hero-meta"><span><i class="status-dot"></i> MEA GUILD</span><span>EST. 2025</span><span>STAY RUTHLESS</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ruthless character artwork">
+        <div class="art-ring art-ring-one"></div><div class="art-ring art-ring-two"></div>
+        <div class="art-glow"></div>
+        <img class="hero-character hero-character-back" src="assets/secondpngbackground.png" alt="Ruthless female character artwork" fetchpriority="high">
+        <img class="hero-character hero-character-front" src="assets/a8605d67773e3e3c26916114d8a68549.png" alt="Ruthless hooded male character artwork" fetchpriority="high">
+        <div class="art-label"><span>01 / 02</span><strong>THE RUTHLESS<br>MENTALITY</strong></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      <div class="hero-index" aria-hidden="true">R / 2025</div>
+    </section>
 
-    <p class="copyright">
+    <section class="intro-strip" aria-label="Guild motto"><span>SKILL</span><b>✦</b><span>LOYALTY</span><b>✦</b><span>TEAMWORK</span><b>✦</b><span>EVOLUTION</span></section>
 
-        © 2026 Ruthless. All Rights Reserved.
+    <section class="section about-section" id="about">
+      <div class="section-kicker reveal">01 <span> / WHO WE ARE</span></div>
+      <div class="about-layout">
+        <div class="section-heading reveal"><p class="eyebrow">OUR STORY</p><h2>NOT JUST A NAME.<br><span>A STANDARD.</span></h2></div>
+        <div class="about-copy reveal">
+          <p class="lead">Ruthless was created in 2025, but the journey began under a different name: <strong>Athena.</strong></p>
+          <p>The guild kept that name for at least two months. Then its leaders decided it was time for something new. Guild Leader <strong>Ragna</strong> and former Acting Guild Leader <strong>Rex</strong> came up with the name <strong>Ruthless</strong>, and the members agreed to move forward together.</p>
+          <p>Today, Ruthless stands for a squad built around skill, loyalty, teamwork and the hunger to improve. Every member represents the name.</p>
+          <div class="motto-card"><span>OUR MOTTO</span><strong>STAY RUTHLESS.</strong><i>— RUTHLESS, MEA</i></div>
+        </div>
+      </div>
+    </section>
 
-    </p>
+    <section class="mission-section" id="mission">
+      <div class="section mission-inner">
+        <div class="section-kicker reveal">02 <span> / WHAT DRIVES US</span></div>
+        <div class="mission-heading reveal"><p class="eyebrow">THE MISSION</p><h2>WE DON'T<br>STAND STILL<span>.</span></h2><p>Our focus is simple: build a stronger team, one player and one match at a time.</p></div>
+        <div class="mission-grid">
+          <article class="mission-card reveal"><span class="card-number">01</span><div class="card-icon">✳</div><h3>COMPETE</h3><p>Build a strong competitive team ready to take on challenges.</p></article>
+          <article class="mission-card reveal"><span class="card-number">02</span><div class="card-icon">↗</div><h3>IMPROVE</h3><p>Help every member sharpen their skills and keep progressing.</p></article>
+          <article class="mission-card reveal"><span class="card-number">03</span><div class="card-icon">⌁</div><h3>SHOW UP</h3><p>Participate in tournaments and grow through competition.</p></article>
+          <article class="mission-card reveal"><span class="card-number">04</span><div class="card-icon">◇</div><h3>STAY UNITED</h3><p>Build a loyal community where teammates support one another.</p></article>
+          <article class="mission-card mission-card-wide reveal"><span class="card-number">05</span><div><h3>MAKE OUR NAME KNOWN</h3><p>Work towards becoming recognised in the Free Fire community.</p></div><span class="wide-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section standards-section" id="standards">
+      <div class="section-kicker reveal">03 <span> / THE RUTHLESS CODE</span></div>
+      <div class="standards-layout">
+        <div class="section-heading reveal"><p class="eyebrow">OUR STANDARDS</p><h2>RESPECT THE<br><span>CREW.</span></h2><p class="heading-note">A strong guild is built by the standards its members choose to uphold.</p></div>
+        <div class="rules-list reveal">
+          <div class="rule-item"><span>01</span><p>At least <strong>2,000 points</strong> from each member.</p><b>↗</b></div>
+          <div class="rule-item"><span>02</span><p>Respect every member of the guild.</p><b>↗</b></div>
+          <div class="rule-item"><span>03</span><p>Respect the guild leaders.</p><b>↗</b></div>
+          <div class="rule-item"><span>04</span><p>No unnecessary toxicity.</p><b>↗</b></div>
+          <div class="rule-item"><span>05</span><p>Help your teammates improve.</p><b>↗</b></div>
+        </div>
+      </div>
+    </section>
 
-</footer>
+    <section class="recruitment-section" id="recruitment">
+      <div class="recruitment-backdrop" aria-hidden="true"></div>
+      <div class="section recruitment-inner">
+        <div class="section-kicker reveal">04 <span> / YOUR NEXT MOVE</span></div>
+        <div class="recruitment-heading reveal"><p class="eyebrow">RECRUITMENT OPEN</p><h2>READY TO<br><span>PROVE IT?</span></h2><p>Think you have what it takes to represent Ruthless? Check the current entry requirements and connect with the guild.</p></div>
+        <div class="requirements-panel reveal">
+          <div class="requirements-top"><span>ENTRY REQUIREMENTS</span><span class="open-indicator"><i></i> GUILD TRYOUTS</span></div>
+          <div class="requirement"><span>MINIMUM LEVEL</span><strong>40</strong></div>
+          <div class="requirement"><span>REQUIRED RANK</span><strong>PLATINUM <small>IN CS OR BR</small></strong></div>
+          <div class="requirement"><span>AGE LIMIT</span><strong>NONE</strong></div>
+          <a class="button button-primary requirements-button" href="https://chat.whatsapp.com/Jds4KnUkWjVIqSGYCprztE" target="_blank" rel="noopener noreferrer">JOIN THE TRYOUT GROUP <span>↗</span></a>
+          <p class="requirements-note">Meeting the requirements is the first step. Contact the guild to learn about the tryout process.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="utility-section section">
+      <div class="utility-copy reveal"><p class="eyebrow">A LITTLE EXTRA</p><h2>MAKE YOUR<br>NAME COUNT.</h2><p>Create a stylised in-game nickname with the Ruthless name generator.</p><a class="text-link" href="nickname.html">OPEN NAME GENERATOR <span>↗</span></a></div>
+      <div class="name-preview reveal"><span>PLAYER IDENTITY / 001</span><strong>ＲＵＴＨＬＥＳＳ <em>情</em></strong><i>YOUR NAME. YOUR PRESENCE.</i></div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="#top"><span class="brand-symbol">R</span><span class="brand-name">RUTHLESS<small>FREE FIRE GUILD</small></span></a><div class="footer-statement">STAY<br><span>RUTHLESS.</span></div><div class="footer-contact"><p class="eyebrow">RECRUITMENT CONTACTS</p><a href="tel:+2349133207076">+234 913 320 7076</a><a href="tel:+2349072232308">+234 907 223 2308</a><a href="tel:+2349018704936">+234 901 870 4936</a><a class="footer-whatsapp" href="https://chat.whatsapp.com/Jds4KnUkWjVIqSGYCprztE" target="_blank" rel="noopener noreferrer">WHATSAPP TRYOUT GROUP ↗</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> RUTHLESS. ALL RIGHTS RESERVED.</span><span>MEA REGION <b>•</b> EST. 2025</span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
 </body>
-
 </html>
